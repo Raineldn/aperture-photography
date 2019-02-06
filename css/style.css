@@ -85,8 +85,8 @@ main {
 }
 
 #header h2 {
-	border-left: dotted 1px #fff;
-	border-right: dotted 1px #fff;
+	border-left: solid 0.5px #fff;
+	border-right: solid 0.5px #fff;
 	display: inline-block;
 	padding-right: 1rem;
 	padding-left: 1rem;
@@ -97,8 +97,34 @@ main {
 	text-align: center;
 }
 
+footer {
+	text-align: center;
+	padding: 2rem 1rem;
+	margin: auto;
+	color: #333;
+}
 
+footer h3 {
+	font-size: 3rem;
+	margin-bottom: 0;
+}
 
+/* Screen Sizes 500px and Up */
+
+@media(min-width: 500px) {
+	#landing {
+		display: flex;
+		height: 100%;
+	}
+
+	#landing-text {
+		height: 100vh;
+	}
+
+	#landing-image {
+		height: 100vh;
+	}
+}
 
 
 
